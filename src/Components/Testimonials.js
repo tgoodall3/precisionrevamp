@@ -63,7 +63,7 @@ function Testimonials() {
                 </Box>
             </Grid>
                 {testimonials.slice(page * testimonialsPerPage, (page + 1) * testimonialsPerPage).map((testimonial, index) => (
-                    <Grid item xs={12} sm={6} md={4} key={index}>
+                    <Grid item xs={12} sm={6} md={4} key={index} sx={{}}>
                         <Box sx={{ backgroundColor: theme.palette.error.main, width: '220px', height: '220px', margin: 'auto', display:'flex', justifyContent:'center', alignItems:'left', flexDirection:'column', padding:'20px' }}>
                             <Typography variant="h2" component="h1" gutterBottom sx={{color: theme.palette.secondary.main, fontSize: '25px', color: 'white'}}>
                                 {testimonial.name}
@@ -85,7 +85,7 @@ function Testimonials() {
             <Button sx={{color:theme.palette.secondary.main}} onClick={() => setPage(page => Math.max(page - 1, 0))}>Previous</Button>
             <Button sx={{color:theme.palette.secondary.main}} onClick={() => setPage(page => Math.min(page + 1, totalPages - 1))}>Next</Button>
             <Typography variant="h2" component="h1" gutterBottom sx={{color: theme.palette.secondary.main, fontSize: isMobile ? '18px' : '25px', color: 'black', textAlign:'center', marginTop:'100px', marginBottom:'30px'}}>
-                Let us know how we did!
+                Add your experience with us, we would love to hear from you!
             </Typography>
             <form onSubmit={handleSubmit} style={{display:'flex', flexDirection:'column', width:'100%', margin: '0 auto'}}>
                 <TextField 
