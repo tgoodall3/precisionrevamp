@@ -28,14 +28,27 @@ const Navbar = () => {
                         <IconButton edge="start" color="inherit" aria-label="menu" onClick={handleDrawerOpen}>
                             <MenuIcon />
                         </IconButton>
-                        <Drawer anchor="right" open={drawerOpen} onClose={handleDrawerClose}>
-                            <List>
-                                <ListItem button component={Link} to="/who-we-are" onClick={handleDrawerClose}>Who We Are</ListItem>
-                                <ListItem button component={Link} to="/what-we-do" onClick={handleDrawerClose}>What We Do</ListItem>
-                                <ListItem button component={Link} to="/projects" onClick={handleDrawerClose}>Projects</ListItem>
-                                <ListItem button component={Link} to="/contact-us" onClick={handleDrawerClose}>Contact Us</ListItem>
-                            </List>
-                        </Drawer>
+                     <Drawer
+    anchor="right"
+    open={drawerOpen}
+    onClose={handleDrawerClose}
+    sx={{ '& .MuiDrawer-paper': { width: '80%', bgcolor: '#f5f5f5' } }}
+>
+    <List>
+        <ListItem button component={Link} to="/who-we-are" onClick={handleDrawerClose} sx={{ my: 2 }}>
+            <Typography variant="h6">Who We Are</Typography>
+        </ListItem>
+        <ListItem button component={Link} to="/what-we-do" onClick={handleDrawerClose} sx={{ my: 2 }}>
+            <Typography variant="h6">What We Do</Typography>
+        </ListItem>
+        <ListItem button component={Link} to="/projects" onClick={handleDrawerClose} sx={{ my: 2 }}>
+            <Typography variant="h6">Projects</Typography>
+        </ListItem>
+        <ListItem button component={Link} to="/contact-us" onClick={handleDrawerClose} sx={{ my: 2 }}>
+            <Typography variant="h6">Contact Us</Typography>
+        </ListItem>
+    </List>
+</Drawer>
                     </>
                 ) : (
                     <div>

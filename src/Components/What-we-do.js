@@ -25,10 +25,10 @@ const WhatWeDo = () => {
                         <ListItem>Free Consultations</ListItem>
                     </List>
                 </div>
-                <img src={placeholder} alt="painting" style={{width: isMedium ? '100%' : '40%', height:'400px', borderRadius:'10px', overflow:'hidden'}}/>
+                <img src={placeholder} alt="painting" style={{width: isMedium ? '100%' : '40%', height: isMedium ? '300px' :'400px', borderRadius:'10px', overflow:'hidden', marginTop: isMedium ? '30px' : 0}}/>
             </Box>
             <Box sx={{ p: 9, display:'flex', flexDirection: isMedium ? 'column-reverse' : 'row', justifyContent:'space-between' }}>
-                <img src={placeholder} alt="painting" style={{width: isMedium ? '100%' : '40%', height:'400px', borderRadius:'10px', overflow:'hidden'}}/>
+                <img src={placeholder} alt="painting" style={{width: isMedium ? '100%' : '40%', height: isMedium ? '300px' :'400px', borderRadius:'10px', overflow:'hidden', marginTop: isMedium ? '30px' : 0}}/>
                 <div style={{flexDirection:'column'}}>
                 <Typography variant="h2" component="h1" gutterBottom sx={{color:'black', fontSize: isMedium ? '32px' : '62px', textAlign: isMedium ? 'center' : 'left'}}>
                         Our Process
