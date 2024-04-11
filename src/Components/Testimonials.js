@@ -60,6 +60,14 @@ function Testimonials() {
                     <Typography variant="h5" component="p" gutterBottom sx={{ fontSize:'12px',color:'white', display:'flex' }}>
                         We pride ourselves on our customer service and satisfaction. Here are some of the things our clients have said about us.
                     </Typography>
+                    <ReactStars
+                    count={5}
+                    onChange={ratingChanged}
+                    size={24}
+                    activeColor="#ffd700"
+                    edit={false}
+                    style={{marginBottom:'20px'}}
+                />
                 </Box>
             </Grid>
                 {testimonials.slice(page * testimonialsPerPage, (page + 1) * testimonialsPerPage).map((testimonial, index) => (
