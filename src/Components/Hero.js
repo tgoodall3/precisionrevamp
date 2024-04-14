@@ -26,26 +26,26 @@ const Hero = () => {
                 color: '#fff' 
             }}
         >
-            <Typography variant="h2" component="h1" gutterBottom sx={{color:'black', fontSize: isMobile ? '32px' : '62px', textAlign: "center", color: theme.palette.secondary.main}}>
+            <Typography variant="h2" component="h1" gutterBottom sx={{color:'black', fontSize: isMobile ? '32px' : '62px', textAlign: isMobile ? "center" : "left", color: theme.palette.secondary.main}}>
               Welcome to Precision Painting
             </Typography>
             <div style={{ height: '200px', borderLeft: '1px solid black', marginRight:'50px', display: isMobile ? 'none' : 'flex' }} />
-            <Typography variant="h5" component="p" gutterBottom sx={{fontSize:'18px',color:'black', display:'flex', flexDirection:'column', padding:'10px', alignItems: isMobile ? 'center' : 'flex-start', 
-            textAlign: isMobile ? 'center' : 'left',
-            width: isMobile ? '80%' : '400px'}}>
-            We are an innovative interior design and construction company dedicated to transforming spaces into stunning works of art.                
-            <Button variant="contained" color="secondary" sx={{marginTop:'20px', width:'150px'}}>
-                Lets Chat
-            </Button>
-            </Typography>
+            <Typography variant="h5" component="p" gutterBottom sx={{fontSize:'18px',color:'black', display:'flex', flexDirection:'column', alignItems: isMobile ? 'center' : 'flex-start', 
+textAlign: isMobile ? 'center' : 'left',
+width: isMobile ? '80%' : '400px'}}>
+    At Precision Contracting, we're more than just painters. We're a full-service contracting company specializing in painting, bathroom remodels, drywall repair, and more. Our team is dedicated to transforming your space into something truly special.
+    <Button variant="contained" color="secondary" sx={{marginTop:'20px', width:'150px', marginBottom:'20px'}}>
+        Let's Chat
+    </Button>
+</Typography>
             </Box>
 
             <Box>
             <img src={placeholder} alt="logo" style={{
                 position:'absolute',
-                top: isMobile ? 'auto' : '300px',
+                top: isMobile ? 'auto' : '320px',
                 right:'0',
-                width: isMobile ? '100%' : '1123px',
+                width: isMobile ? '100%' : '1140px',
                 height: isMobile ? 'auto' : '390px',
                 borderRadius:'0px',
                 overflow:'hidden',

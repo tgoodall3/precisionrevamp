@@ -22,7 +22,7 @@ const Navbar = () => {
     return (
         <AppBar position="static">
             <Toolbar sx={{ justifyContent: 'space-between', bgcolor:'white', height:'80px' }}>
-                <img src={logoBlue} alt="logo" style={{display:'flex', height:'80px', width:'80px'}}/>
+             <Link to={'/'}><img src={logoBlue} alt="logo" style={{display:'flex', height:'80px', width:'80px'}}/></Link>
                 {isMobile ? (
                     <>
                         <IconButton edge="start" color="inherit" aria-label="menu" onClick={handleDrawerOpen}>
@@ -35,8 +35,8 @@ const Navbar = () => {
     sx={{ '& .MuiDrawer-paper': { width: '80%', bgcolor: '#f5f5f5' } }}
 >
     <List>
-        <ListItem button component={Link} to="/who-we-are" onClick={handleDrawerClose} sx={{ my: 2 }}>
-            <Typography variant="h6">Who We Are</Typography>
+        <ListItem button component={Link} to="/about" onClick={handleDrawerClose} sx={{ my: 2 }}>
+           <Typography variant="h6">Who We Are</Typography>
         </ListItem>
         <ListItem button component={Link} to="/what-we-do" onClick={handleDrawerClose} sx={{ my: 2 }}>
             <Typography variant="h6">What We Do</Typography>
@@ -52,7 +52,7 @@ const Navbar = () => {
                     </>
                 ) : (
                     <div>
-                        <Button color="inherit" component={Link} to="/who-we-are">Who We Are</Button>
+                        <Button color="inherit" component={Link} to="/about">Who We Are</Button>
                         <Button color="inherit" component={Link} to="/what-we-do">What We Do</Button>
                         <Button color="inherit" component={Link} to="/projects">Projects</Button>
                         <Button color="inherit" component={Link} to="/contact-us">Contact Us <FaArrowRight style={{fontSize:'15px', fontWeight:'lighter',padding:'5px', color: theme.palette.secondary.main}} /></Button>

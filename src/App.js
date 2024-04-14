@@ -5,8 +5,14 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Home from './Components/Pages/Home';
 import Footer from './Components/Footer';
+import WhoWeAre from './Components/Pages/Who-we-are';
+import Project from './Components/Pages/Project';
 
 const theme = createTheme({
+  typography: {
+    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+  },
+  
   palette: {
     primary: {
       main: '#b0dbf1',
@@ -28,6 +34,8 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<WhoWeAre />} />
+            <Route path="/projects" element={<Project />} />
             {/* Other routes go here */}
           </Routes>
           <Footer />

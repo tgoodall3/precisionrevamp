@@ -36,38 +36,39 @@ const About = () => {
             <Typography variant="h2" component="h1" gutterBottom sx={{color:'white', fontSize: isMedium ? '32px' : '62px', textAlign: isMedium ? 'center' : 'left'}}>
                 Why Choose Us?
                 </Typography>
-                <List sx={{color:'white'}}>
-                    <ListItem>
-                        <ListItemIcon>
-                            <FiberManualRecordIcon sx={{color: theme.palette.primary.main}} />
-                        </ListItemIcon>
-                        <ListItemText primary="Preferential Price" />
-                    </ListItem>
-                    <ListItem>
-                        <ListItemIcon>
-                            <FiberManualRecordIcon sx={{color: theme.palette.primary.main}}/>
-                        </ListItemIcon>
-                        <ListItemText primary="After Care" />
-                    </ListItem>
-                    <ListItem>
-                        <ListItemIcon>
-                            <FiberManualRecordIcon sx={{color: theme.palette.primary.main}}/>
-                        </ListItemIcon>
-                        <ListItemText primary="We convey the unique appeal and color plan" />
-                    </ListItem>
-                    <ListItem>
-                        <ListItemIcon>
-                            <FiberManualRecordIcon sx={{color: theme.palette.primary.main}}/>
-                        </ListItemIcon>
-                        <ListItemText primary="Quality Service" />
-                    </ListItem>
-                </List>
-                <Typography variant="body1" sx={{ width: isMedium ? '100%' : '500px', color: 'white', padding: isMedium ? '0' : '20px' }}>
-                    Laborum ullamco id non excepteur aliqua ea cillum et reprehenderit. Cupidatat ex dolore amet mollit voluptate culpa et est
-                </Typography>
+<List sx={{color:'white'}}>
+    <ListItem>
+        <ListItemIcon>
+            <FiberManualRecordIcon sx={{color: theme.palette.primary.main}} />
+        </ListItemIcon>
+        <ListItemText primary="Competitive Pricing" />
+    </ListItem>
+    <ListItem>
+        <ListItemIcon>
+            <FiberManualRecordIcon sx={{color: theme.palette.primary.main}}/>
+        </ListItemIcon>
+        <ListItemText primary="Quality Aftercare" />
+    </ListItem>
+    <ListItem>
+        <ListItemIcon>
+            <FiberManualRecordIcon sx={{color: theme.palette.primary.main}}/>
+        </ListItemIcon>
+        <ListItemText primary="Custom Design and Color Planning" />
+    </ListItem>
+    <ListItem>
+        <ListItemIcon>
+            <FiberManualRecordIcon sx={{color: theme.palette.primary.main}}/>
+        </ListItemIcon>
+        <ListItemText primary="High-Quality Service" />
+    </ListItem>
+</List>
+<Typography variant="body1" sx={{ width: isMedium ? '100%' : '500px', color: 'white', padding: isMedium ? '0' : '20px' }}>
+    At Precision Paint, we pride ourselves on delivering top-notch contracting services. From painting to bathroom remodels, drywall repair, and more, we ensure every project is completed to the highest standards. Your satisfaction is our priority.
+</Typography>
             </Box>
         </Box>
     );
 };
 
 export default About;
+
