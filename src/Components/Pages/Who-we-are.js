@@ -38,9 +38,9 @@ const WhoWeAre = () => {
         <img src={placeholder} alt="logo" style={{
             top: 'auto',
             right:'0',
-            width: '1140px',
+            width: '100%',
+            height: 'auto',
             padding: '0px',
-            height: '400px',
             borderRadius:'0px',
             overflow:'hidden',
         }}/>
