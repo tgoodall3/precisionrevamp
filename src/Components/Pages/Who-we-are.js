@@ -88,8 +88,8 @@ const WhoWeAre = () => {
         <Box>
             <img src={placeholder} alt="logo" style={{
                 right:'0',
-                width: '270px',
-                height: '400px',
+                width: '100%',
+                height: 'auto',
                 borderRadius:'8px',
                 overflow:'hidden',
             }}/>
