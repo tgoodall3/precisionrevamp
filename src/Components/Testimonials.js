@@ -58,7 +58,7 @@ function Testimonials() {
                         Testimonials
                     </Typography>
                     <Typography variant="h5" component="p" gutterBottom sx={{ fontSize:'12px',color:'white', display:'flex' }}>
-                        We pride ourselves on our customer service and satisfaction. Here are some of the things our clients have said about us.
+                        Customer service and satisfaction is our highest priority. Here are some of the things our clients have said about us.
                     </Typography>
                     <ReactStars
                     count={5}

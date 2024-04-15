@@ -63,7 +63,7 @@ const About = () => {
     </ListItem>
 </List>
 <Typography variant="body1" sx={{ width: isMedium ? '100%' : '500px', color: 'white', padding: isMedium ? '0' : '20px' }}>
-    At Precision Paint, we pride ourselves on delivering top-notch contracting services. From painting to bathroom remodels, drywall repair, and more, we ensure every project is completed to the highest standards. Your satisfaction is our priority.
+    We pride ourselves on delivering top-notch contracting services. From painting to bathroom remodels, drywall repair, and more, we ensure every project is completed to the highest standards. Your satisfaction is our priority.
 </Typography>
             </Box>
         </Box>

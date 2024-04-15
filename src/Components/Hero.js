@@ -33,7 +33,7 @@ const Hero = () => {
             <Typography variant="h5" component="p" gutterBottom sx={{fontSize:'18px',color:'black', display:'flex', flexDirection:'column', alignItems: isMobile ? 'center' : 'flex-start', 
 textAlign: isMobile ? 'center' : 'left',
 width: isMobile ? '80%' : '400px'}}>
-    At Precision Contracting, we're more than just painters. We're a full-service contracting company specializing in painting, bathroom remodels, drywall repair, and more. Our team is dedicated to transforming your space into something truly special.
+    At Precision Painting, we're more than just painters. We're a full-service contracting company specializing in painting, bathroom remodels, drywall repair, and more. Our team is dedicated to transforming your space into something truly special.
     <Button variant="contained" color="secondary" sx={{marginTop:'20px', width:'150px', marginBottom:'20px'}}>
         Let's Chat
     </Button>

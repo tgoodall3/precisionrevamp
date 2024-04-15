@@ -34,7 +34,18 @@ const Navbar = () => {
     onClose={handleDrawerClose}
     sx={{ '& .MuiDrawer-paper': { width: '80%', bgcolor: '#f5f5f5' } }}
 >
-    <List>
+    <img src={logoBlue} alt="logo" style={{display:'flex', height:'220px', width:'220px', margin:'0 auto'}}/>
+    <List
+    sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        textAlign: 'center',
+        height: '100%',
+        width: '100%',
+    }}>
+        <ListItem button component={Link} to="/" onClick={handleDrawerClose} sx={{ my: 2 }}>
+            <Typography variant="h6">Home</Typography>
+        </ListItem>
         <ListItem button component={Link} to="/about" onClick={handleDrawerClose} sx={{ my: 2 }}>
            <Typography variant="h6">Who We Are</Typography>
         </ListItem>
@@ -45,7 +56,7 @@ const Navbar = () => {
             <Typography variant="h6">Projects</Typography>
         </ListItem>
         <ListItem button component={Link} to="/contact-us" onClick={handleDrawerClose} sx={{ my: 2 }}>
-            <Typography variant="h6">Contact Us</Typography>
+            <Typography variant="h6">Contact Us<FaArrowRight style={{fontSize:'15px', fontWeight:'lighter', marginLeft:'5px', color: theme.palette.secondary.main}} /></Typography>
         </ListItem>
     </List>
 </Drawer>

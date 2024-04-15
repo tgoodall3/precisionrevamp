@@ -29,7 +29,7 @@ const WhoWeAre = () => {
             color: '#fff' 
         }}
     >
-        <Typography variant="h2" component="h1" gutterBottom sx={{color:'black', fontSize: '32px', textAlign: "center", color: theme.palette.secondary.main}}>
+        <Typography variant="h2" component="h1" gutterBottom sx={{color:'black', fontSize: isMobile ? '32px' : '62px', textAlign: "center", color: theme.palette.secondary.main}}>
             Who We Are
         </Typography>
     </Box>
@@ -38,14 +38,17 @@ const WhoWeAre = () => {
         <img src={placeholder} alt="logo" style={{
             top: 'auto',
             right:'0',
-            width: '100%',
-            height: 'auto',
+            width: '1140px',
+            padding: '0px',
+            height: '400px',
             borderRadius:'0px',
             overflow:'hidden',
         }}/>
     </Box>
 
-    <Box sx={{display:'flex', marginTop:'100px', flexDirection: isMobile ? 'column' : 'row'}}>
+    <Box sx={{display:'flex',  flexDirection: isMobile ? 'column' : 'row',
+            marginTop: isMobile ? '0' : '100px',
+            }}>
         <Box
             sx={{ 
                 justifyContent:'space-between',
@@ -59,7 +62,7 @@ const WhoWeAre = () => {
             }}
         >
             <Typography variant="body2" component="body" gutterBottom sx={{color:'black', fontSize: '15px', textAlign: "center",
-                marginTop:'50px', padding:'10px', alignItems: 'center',
+                padding:'10px', alignItems: 'center',
                 width: '80%',
             }}>
                 Welcome to Precision Painting, we are a full service painting company that specializes in both residential and commercial painting services. 
@@ -85,8 +88,8 @@ const WhoWeAre = () => {
         <Box>
             <img src={placeholder} alt="logo" style={{
                 right:'0',
-                width: '100%',
-                height: 'auto',
+                width: '270px',
+                height: '400px',
                 borderRadius:'8px',
                 overflow:'hidden',
             }}/>

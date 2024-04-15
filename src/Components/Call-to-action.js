@@ -17,7 +17,7 @@ function CallToAction() {
             margin: 'auto',
             padding: theme.spacing(3),
             textAlign: 'center',
-            backgroundColor: theme.palette.primary.main,
+            backgroundColor: theme.palette.secondary.main,
             color: 'black',
             borderRadius: '10px',
             boxShadow: '0 0 10px rgba(0,0,0,0.2)',
@@ -28,10 +28,17 @@ function CallToAction() {
 
         }}>
             <CardContent>
-                <Typography variant="h5" component="div">
+                <Typography variant="h5" component="div"
+                sx={{
+                    color: 'white',
+                    fontSize: '20px',
+                    textAlign: 'center',
+                    marginBottom: '20px',
+                
+                }}>
                     Ready to transform your space?
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="white">
                     Get started with our free consultation. Click the button below to fill out our project form.
                 </Typography>
                 <Button variant="contained" color="error" component={Link} to="/form" sx={{ mt: 2 }}>
